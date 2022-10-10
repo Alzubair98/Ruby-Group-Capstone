@@ -1,6 +1,6 @@
 class Item
   attr_reader :genre, :author, :source, :label
-
+  
   def initialize(publish_date, archived: false)
     @id = Random.rand(1..1000)
     @genre = genre
@@ -18,4 +18,8 @@ class Item
   def move_to_archive
     @archived = can_be_archived?
   end
+
+  def label=(label)
+    @label = label
+    label.items.push(self) unless label.items.include?(self)
 end
