@@ -10,17 +10,18 @@ AllCops:
 Layout/LineLength:
   Max: 120
 Metrics/MethodLength:
-  Max: 20
+  Max: 50
 Metrics/AbcSize:
   Max: 50
 Metrics/ClassLength:
   Max: 150
 Metrics/BlockLength:
-  IgnoredMethods: ['describe']
+  IgnoredMethods: ["describe"]
   Max: 30
 
-
 Style/Documentation:
+  Enabled: false
+Style/GlobalVars:
   Enabled: false
 Style/ClassAndModuleChildren:
   Enabled: false
@@ -42,6 +43,8 @@ Layout/MultilineMethodCallIndentation:
   EnforcedStyle: indented
 Lint/RaiseException:
   Enabled: false
+Lint/DuplicateMethods:
+  Enabled: false
 Lint/StructNewOverride:
   Enabled: false
 Style/HashEachMethods:
@@ -49,4 +52,8 @@ Style/HashEachMethods:
 Style/HashTransformKeys:
   Enabled: false
 Style/HashTransformValues:
+  Enabled: false
+Lint/UselessAssignment:
+  Enabled: false
+Metrics/CyclomaticComplexity:
   Enabled: false
