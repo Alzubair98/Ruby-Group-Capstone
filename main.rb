@@ -1,8 +1,6 @@
-class Main
-  def initialize
-    # will put arrays later
-  end
+require './app.rb'
 
+class Main
   def menu
     puts "\n"
     puts 'please choose an option by entering a number:
@@ -22,7 +20,7 @@ class Main
     user_input = gets.chomp
     case user_input
     when '1'
-      puts 'all Books'
+      list_books
     when '2'
       puts 'all music albums'
     when '3'
@@ -34,12 +32,13 @@ class Main
     when '6'
       puts 'all authors'
     when '7'
-      puts 'Add a book'
+      add_book
     when '8'
       puts 'Add a music album'
     when '9'
       puts 'Add a game'
     when '10'
+      add_book_to_file
       puts 'Thanks for using the app'
       exit
     else

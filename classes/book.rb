@@ -1,18 +1,15 @@
-require_relative './item.rb'
+require_relative './item'
 
 class Book < Item
-    attr_reader :publisher , :cover_state
+  attr_reader :publisher, :cover_state
 
-    def initialize(publisher, cover_state)
-        @publisher = publisher
-        @cover_state = cover_state
-    end
+  def initialize(publisher, cover_state)
+    super(publish_date, archived: false)
+    @publisher = publisher
+    @cover_state = cover_state
+  end
 
-    def can_be_archived?
-        if @cover_state == 'bad'
-            true
-        else
-            false
-        end
-    end
+  def can_be_archived?
+    @cover_state == 'bad'
+  end
 end
