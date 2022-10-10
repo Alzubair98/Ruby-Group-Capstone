@@ -17,9 +17,9 @@
 
 :man_technologist: **Francis Wayungi** :writing_hand:
 
-- GitHub: [@Francis Wayungi](https://github.com/AbrahaKahsay)
-- Twitter: [@Francis Wayungi](https://twitter.com/abraha_ka)
-- LinkedIn: [@Francis Wayungi-kahsay](https://www.linkedin.com/in/abraha-kahsay/)
+- GitHub: [@githubhandle](https://github.com/wayungi)
+- Twitter: [@twitterhandle](https://twitter.com/FrancisWayungi)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/francis-wayungi-3aa626231)
 
 :man_technologist: **Shahira Sadat** :writing_hand:
 
