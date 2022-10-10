@@ -1,4 +1,6 @@
-class Book < item
+require_relative './item.rb'
+
+class Book < Item
     attr_reader :publisher , :cover_state
 
     def initialize(publisher, cover_state)
