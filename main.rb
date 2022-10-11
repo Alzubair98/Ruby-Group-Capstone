@@ -33,7 +33,7 @@ class Main
     when '2'
       @app.list_all_albums
     when '3'
-      puts 'list games'
+      @app.list_of_games
     when '4'
       @app.list_all_genres
     when '5'

@@ -68,9 +68,23 @@ class App
     save_data_as_json(@genres, 'genres')
   end
 
-  def add_game(published_date, multiplayer, last_played_at)
-    new_game_instance = Game.new(published_date, multiplayer, last_played_at)
+  def add_game(name, publish_date, multiplayer, last_played_at)
+    new_game_instance = Game.new(name, publish_date, multiplayer, last_played_at)
     @games << new_game_instance
+  end
+
+  def list_of_games
+    puts "\nNote: No games available." if @games.empty?
+    puts "\n"
+    puts "\nALL GAMES\n\n"
+    puts "\Title \t| Published date \t| Is multiplayer \t| Last palyed date"
+    puts '---------------------------'
+    @games.each do |game|
+      puts "#{game.name} \t| #{game.publish_date} \t| #{game.multiplayer} \t| #{game.last_played_at}"
+      puts "\n-----------------------"
+    end
+
+
   end
 
   private
