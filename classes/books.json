@@ -1,10 +1,17 @@
 [
   {
-    "publisher": "zubair",
-    "cover_state": "good"
+    "publisher": "alzubair",
+    "cover_state": "good",
+    "label": "new"
   },
   {
     "publisher": "alzubair",
-    "cover_state": "bad"
+    "cover_state": "bad",
+    "label": "old"
+  },
+  {
+    "publisher": "alzubair",
+    "cover_state": "bad",
+    "label": "gift"
   }
 ]

@@ -1,4 +1,4 @@
-require './classes/book.rb'
+require './classes/book'
 require 'json'
 
 if File.exist?('./classes/books.json')
@@ -15,9 +15,11 @@ def add_book
   puts 'please enter the details below'
   puts 'Enter Publisher name:- '
   publisher_name = gets.chomp
-  puts 'Enter Cover state (good/bad)'
+  puts 'Enter Cover state (good/bad):-'
   cover = gets.chomp
-  $books << Book.new(publisher_name, cover)
+  puts 'Enter Label name:-'
+  label = gets.chomp
+  $books << Book.new(publisher_name, cover, label)
   puts 'Book created :)'
 end
 
@@ -27,7 +29,7 @@ def add_book_to_file
     books_list << if book.instance_of?(Hash)
                     book
                   else
-                    { publisher: book.publisher, cover_state: book.cover_state }
+                    { publisher: book.publisher, cover_state: book.cover_state, label: book.label }
                   end
     File.write('./classes/books.json', JSON.pretty_generate(books_list))
   end
@@ -37,6 +39,15 @@ def list_books
   if $books.empty?
     puts 'there is no books :('
   else
-    $books.each { |book| book.each { |k, v| puts "#{k}:- #{v}"}}
+    $books.each { |book| book.each { |k, v| puts "#{k}:- #{v}" } }
+  end
+end
+
+def list_labels
+  if $books.empty?
+    puts 'there is no labels :('
+  else
+    $books.each { |book| book.each { |k, v| puts "#{k}:- #{v}" if k.to_s == 'label' } }
+
   end
 end

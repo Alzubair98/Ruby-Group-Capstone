@@ -1,4 +1,4 @@
-require './app.rb'
+require './app'
 
 class Main
   def menu
@@ -28,7 +28,7 @@ class Main
     when '4'
       puts 'all genres'
     when '5'
-      puts 'all lables'
+      list_labels
     when '6'
       puts 'all authors'
     when '7'
