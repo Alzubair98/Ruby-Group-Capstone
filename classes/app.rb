@@ -119,6 +119,8 @@ class App
     save_data_as_json(@labels, 'labels')
     save_data_as_json(@albums, 'albums')
     save_data_as_json(@genres, 'genres')
+    save_data_as_json(@games, 'games')
+    save_data_as_json(@authors, 'authors')
   end
 
   def add_game(name, publish_date, multiplayer, last_played_at)
@@ -130,7 +132,6 @@ class App
       'last_played_at' => last_played_at
     }
     @games << new_game_hash
-    puts @games
   end
 
   def list_of_games
@@ -152,14 +153,19 @@ class App
     puts "\First Name \t| Last Name "
     puts '---------------------------'
     @authors.each do |author|
-      puts "#{author.first_name} \t| #{author.last_name}"
+      puts "#{author['first_name']} \t| #{author['last_name']}"
       puts "\n-----------------------"
     end
   end
 
   def add_author(first_name, last_name)
     author =  Author.new(first_name, last_name)
-    @authors  << author
+    author_hash = {
+      'first_name' => first_name,
+      'last_name' => last_name,
+      'id' => author.id
+    }
+    @authors  << author_hash
   end
 
   private
@@ -169,5 +175,7 @@ class App
     @labels = load_file('labels')
     @albums = load_file('albums')
     @genres = load_file('genres')
+    @games = load_file('games')
+    @authors = load_file('authors')
   end
 end
