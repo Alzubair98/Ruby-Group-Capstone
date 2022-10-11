@@ -1,6 +1,7 @@
 require_relative './music_album'
 require_relative './genre'
 require './modules/preserver_module'
+require_relative './game'
 
 class App
   include PreserverModule
@@ -67,7 +68,11 @@ class App
     save_data_as_json(@genres, 'genres')
   end
 
-  def add_game
+  def add_game(published_date, multiplayer, last_played_at)
+    new_game_instance = Game.new(published_date, multiplayer, last_played_at)
+    @games << new_game_instance
+    puts @games
+
   end
 
   private

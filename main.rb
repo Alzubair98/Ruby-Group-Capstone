@@ -1,8 +1,10 @@
 require './classes/app'
 require_relative './modules/music_album_module'
+require_relative './modules/game_module'
 
 class Main
   include MusicAlbumModule
+  include  GameModule
 
   def initialize
     @app = App.new
@@ -43,12 +45,12 @@ class Main
     when '8'
       add_new_album_details
     when '9'
-      puts 'add new game'
+      add_a_game_details
     when '10'
       @app.preserve_files
       puts 'Thanks for using the application'
       puts 'Exiting the application...'
-      sleep 2
+      # sleep 2
       exit
     else
       puts "\n Wrong number. Please select a number from (1-10)\n"
