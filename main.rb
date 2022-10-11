@@ -3,6 +3,15 @@ class Main
     # will put arrays later
   end
 
+require_relative './modules/music_album_module'
+
+class Main
+  include MusicAlbumModule
+
+  def initialize
+    @app = App.new
+  end
+
   def menu
     puts "\n"
     puts 'please choose an option by entering a number:
