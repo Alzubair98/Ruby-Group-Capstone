@@ -3,5 +3,10 @@
     "publisher": "lucas",
     "cover_state": "good",
     "label": "parentsTV"
+  },
+  {
+    "publisher": "francis",
+    "cover_state": "bad",
+    "label": "i know"
   }
 ]
