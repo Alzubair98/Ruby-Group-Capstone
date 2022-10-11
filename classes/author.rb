@@ -11,6 +11,3 @@ class Author
     items.genre = self
   end
 end
-
-# Create an Author class with an association to the Item class (in a separate .rb file).
-# All Author class properties visible in the diagram should be defined and set up in the constructor method.
