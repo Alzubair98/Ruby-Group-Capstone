@@ -72,7 +72,6 @@ class App
     new_game_instance = Game.new(published_date, multiplayer, last_played_at)
     @games << new_game_instance
     puts @games
-
   end
 
   private

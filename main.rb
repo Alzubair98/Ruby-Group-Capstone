@@ -4,7 +4,7 @@ require_relative './modules/game_module'
 
 class Main
   include MusicAlbumModule
-  include  GameModule
+  include GameModule
 
   def initialize
     @app = App.new

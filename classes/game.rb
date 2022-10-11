@@ -7,7 +7,7 @@ class Game < Item
 
   private
 
-  def can_be_archived; 
-  super && (Time.now.year - last_played_at) > 2
+  def can_be_archived
+    super && (Time.now.year - last_played_at) > 2
   end
 end
