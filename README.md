@@ -23,9 +23,10 @@
 
 :man_technologist: **Shahira Sadat** :writing_hand:
 
-- GitHub: [@Shahira Sadat](https://github.com/AbrahaKahsay)
-- Twitter: [@Shahira Sadat](https://twitter.com/abraha_ka)
-- LinkedIn: [@Shahira Sadat](https://www.linkedin.com/in/abraha-kahsay/)
+- GitHub: [Shahira Sadat](https://github.com/shahira-sadat)
+- Twitter: [Shahira Sadat](https://twitter.com/SadatShahira)
+- Linkedin: [Shahira Sadat](https://www.linkedin.com/in/shahira-sadat-49b402199)
+- Gmail: [Email](shahira.sadat1@gmail.com)
 
 ## 🤝 Contributing
 
