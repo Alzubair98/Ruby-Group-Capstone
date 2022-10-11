@@ -4,6 +4,7 @@ require './classes/book'
 require './classes/label'
 require './modules/preserver_module'
 require_relative './game'
+require_relative './author'
 
 class App
   include PreserverModule
@@ -147,7 +148,11 @@ class App
       puts "#{author.first_name} \t| #{author.last_name}"
       puts "\n-----------------------"
     end
+  end
 
+  def add_author(first_name, last_name)
+    author =  Author.new(first_name, last_name)
+    @authors  << author
   end
 
   private
