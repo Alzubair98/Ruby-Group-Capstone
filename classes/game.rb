@@ -1,3 +1,5 @@
+require_relative './item'
+
 class Game < Item
     attr_reader :name, :multiplayer, :publish_date, :last_played_at
   def initialize(name, publish_date, multiplayer, last_played_at)

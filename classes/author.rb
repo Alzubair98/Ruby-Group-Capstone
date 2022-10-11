@@ -8,7 +8,7 @@ class Author
   end
 
   def add_item(item)
-    @items << item unless items.include?(item)
-    items.author = self
+    @items << item unless @items.include?(item)
+    item.author = self
   end
 end
