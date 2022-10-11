@@ -159,13 +159,13 @@ class App
   end
 
   def add_author(first_name, last_name)
-    author =  Author.new(first_name, last_name)
+    author = Author.new(first_name, last_name)
     author_hash = {
       'first_name' => first_name,
       'last_name' => last_name,
       'id' => author.id
     }
-    @authors  << author_hash
+    @authors << author_hash
   end
 
   private

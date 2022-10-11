@@ -9,7 +9,7 @@ module AuthorModule
 
     first_name = capture_input('Enter First Name ')
     last_name = capture_input('Enter Last Name ')
-    
+
     @app.add_author(first_name, last_name)
     puts "\nNew Author Added!"
     puts "\n-------------------------------"
