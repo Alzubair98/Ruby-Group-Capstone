@@ -57,3 +57,5 @@ Lint/UselessAssignment:
   Enabled: false
 Metrics/CyclomaticComplexity:
   Enabled: false
+AllCops:
+  SuggestExtensions: false

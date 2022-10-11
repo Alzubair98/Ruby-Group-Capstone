@@ -27,30 +27,31 @@ class Main
     user_input = gets.chomp
     case user_input
     when '1'
-      puts "list books"
+      puts 'list books'
     when '2'
       @app.list_all_albums
     when '3'
-      puts "list games"
+      puts 'list games'
     when '4'
       @app.list_all_genres
     when '5'
-      puts "list labels"
+      puts 'list labels'
     when '6'
-      puts "list authors"
+      puts 'list authors'
     when '7'
-      puts "add new book"
+      puts 'add new book'
     when '8'
       add_new_album_details
     when '9'
-      puts "add new game"
+      puts 'add new game'
     when '10'
       @app.preserve_files
+      puts 'Thanks for using the application'
       puts 'Exiting the application...'
       sleep 2
       exit
     else
-      puts "\nERROR: Invalid option. Please select a digit from (1-10)\n"
+      puts "\n Wrong number. Please select a number from (1-10)\n"
     end
   end
 
