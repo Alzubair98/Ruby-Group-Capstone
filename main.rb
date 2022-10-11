@@ -1,8 +1,10 @@
 require './classes/app'
+require './modules/book_module'
 require_relative './modules/music_album_module'
 require_relative './modules/game_module'
 
 class Main
+  include BookModule
   include MusicAlbumModule
   include GameModule
 
@@ -29,7 +31,7 @@ class Main
     user_input = gets.chomp
     case user_input
     when '1'
-      puts 'list books'
+      @app.list_all_books
     when '2'
       @app.list_all_albums
     when '3'
@@ -37,18 +39,17 @@ class Main
     when '4'
       @app.list_all_genres
     when '5'
-      puts 'list labels'
+      @app.list_all_labels
     when '6'
-      puts 'list authors'
+      'list_all_authors'
     when '7'
-      puts 'add new book'
+      add_new_book_details
     when '8'
       add_new_album_details
     when '9'
       add_a_game_details
     when '10'
       @app.preserve_files
-      puts 'Thanks for using the application'
       puts 'Exiting the application...'
       # sleep 2
       exit
