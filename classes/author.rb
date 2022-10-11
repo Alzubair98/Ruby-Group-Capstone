@@ -8,6 +8,6 @@ class Author
 
   def add_item(item)
     @items << item unless items.include?(item)
-    items.genre = self
+    items.author = self
   end
 end
