@@ -1,8 +1,10 @@
 require './classes/app'
 require './modules/book_module'
+require_relative './modules/music_album_module'
 
 class Main
   include BookModule
+  include MusicAlbumModule
 
   def initialize
     @app = App.new
@@ -29,11 +31,11 @@ class Main
     when '1'
       @app.list_all_books
     when '2'
-      'list_all_albums'
+      @app.list_all_albums
     when '3'
       'list_all_games'
     when '4'
-      'list_all_genres'
+      @app.list_all_genres
     when '5'
       @app.list_all_labels
     when '6'
@@ -41,7 +43,7 @@ class Main
     when '7'
       add_new_book_details
     when '8'
-      'add_new_album_details'
+      add_new_album_details
     when '9'
       'add_new_game_details'
     when '10'
@@ -50,7 +52,7 @@ class Main
       sleep 2
       exit
     else
-      puts "\nERROR: Invalid option. Please select a digit from (1-10)\n"
+      puts "\n Wrong number. Please select a number from (1-10)\n"
     end
   end
 
