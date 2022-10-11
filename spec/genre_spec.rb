@@ -1,7 +1,7 @@
 require_relative '../classes/genre'
 require_relative '../classes/item'
 
-describe Genre do
+describe 'Genre' do
   before(:each) do
     @genre = Genre.new('comedy')
     @item = Item.new(@genre)
@@ -16,3 +16,4 @@ describe Genre do
     expect(@genre.items.size).to be 1
   end
 end
+

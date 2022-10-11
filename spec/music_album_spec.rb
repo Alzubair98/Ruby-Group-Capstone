@@ -1,8 +1,8 @@
 require_relative '../classes/music_album'
 
-describe MusicAlbum do
+describe 'MusicAlbum' do
   before(:each) do
-    @musicalbum = MusicAlbum.new(true, 'Favorate', '02/15/1999')
+    @musicalbum = MusicAlbum.new(true, 'Fav', '02/15/1999')
   end
 
   it 'can has an instance' do
@@ -13,8 +13,8 @@ describe MusicAlbum do
     expect(@musicalbum.on_spotify).to be true
   end
 
-  it 'has name to be Favorate' do
-    expect(@musicalbum.name).to eq 'Favorate'
+  it 'has name to be Fav' do
+    expect(@musicalbum.name).to eq 'Fav'
   end
 
   it 'has publish_date to be 02/15/1999' do
