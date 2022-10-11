@@ -122,8 +122,15 @@ class App
   end
 
   def add_game(name, publish_date, multiplayer, last_played_at)
-    new_game_instance = Game.new(name, publish_date, multiplayer, last_played_at)
-    @games << new_game_instance
+    # new_game_instance = Game.new(name, publish_date, multiplayer, last_played_at)
+    new_game_hash = {
+      'name' => name,
+      'publish_date' => publish_date,
+      'multiplayer' => multiplayer,
+      'last_played_at' => last_played_at
+    }
+    @games << new_game_hash
+    puts @games
   end
 
   def list_of_games
@@ -133,7 +140,7 @@ class App
     puts "\Title \t| Published date \t| Is multiplayer \t| Last palyed date"
     puts '---------------------------'
     @games.each do |game|
-      puts "#{game.name} \t| #{game.publish_date} \t| #{game.multiplayer} \t| #{game.last_played_at}"
+      puts "#{game['name']} \t| #{game['publish_date']} \t| #{game['multiplayer']} \t| #{game['last_played_at']}"
       puts "\n-----------------------"
     end
   end
