@@ -37,7 +37,7 @@ end
 
 def list_books
   if $books.empty?
-    puts 'there is no books :('
+    puts 'there are no books :('
   else
     $books.each { |book| book.each { |k, v| puts "#{k}:- #{v}" } }
   end
@@ -45,9 +45,8 @@ end
 
 def list_labels
   if $books.empty?
-    puts 'there is no labels :('
+    puts 'there are no labels :('
   else
     $books.each { |book| book.each { |k, v| puts "#{k}:- #{v.capitalize}" if k.to_s == 'label' } }
-
   end
 end
