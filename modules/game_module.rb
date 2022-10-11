@@ -10,9 +10,9 @@ module GameModule
     puts "\nENTER GAME DETAILS\n\n"
 
     name = capture_input('Enter game title ')
-    publish_date = capture_input('Enter publish date (dd/mm/yyyy)')
+    publish_date = capture_input('Enter publish date (yyyy/mm/dd)')
     players = capture_input('Is the game multiplayer? (Y/N)').downcase!
-    last_played_at = capture_input('Enter last played date: (dd/mm/yyyy)')
+    last_played_at = capture_input('Enter last played date: (yyyy/mm/dd)')
     multiplayer = players == 'y' ? true : false
 
     @app.add_game(name, publish_date, multiplayer, last_played_at)
