@@ -9,9 +9,9 @@ module MusicAlbumModule
     puts "\nENTER MUSIC ALBUM DETAILS\n\n"
 
     album_name = capture_input('Input album name')
-    publish_date = capture_input('Input release date')
+    publish_date = capture_input('Input relase date')
     genre_name = capture_input('Input genre name')
-    on_spotify = capture_input('Is album on Spotify? (enter Y for "Yes", enter any key else for "No"')
+    on_spotify = capture_input('Is album on Spotify? (enter Y for "Yes" evertyhing else will be treated as "No"')
 
     on_spotify = on_spotify == 'Y' || false
 
