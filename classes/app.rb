@@ -33,7 +33,7 @@ class App
   end
 
   def list_all_albums
-    puts "\n No albums available." if @albums.empty?
+    puts "\nNote: No albums available." if @albums.empty?
 
     puts "\n----------------------------"
     puts "\nALL ALBUMS\n\n"
@@ -48,7 +48,7 @@ class App
   end
 
   def list_all_genres
-    puts "\n No genres available." if @genres.empty?
+    puts "\nNote: No genres available." if @genres.empty?
 
     puts "\n----------------------------"
     puts "\nALL GENRES\n\n"
@@ -58,16 +58,6 @@ class App
       puts genre['genre_name'].to_s.strip
       puts "\n----------------------------"
     end
-  end
-
-  def add_game(new_game)
-    new_game_instance = Game.new(*new_game)
-    hash = {
-      'game_name' => new_game_instance.game_name,
-      'last_played_at' => new_game_instance.last_played_at,
-      'multiplayer' => new_game_instance.multiplayer
-    }
-    @games << hash
   end
 
   def preserve_files

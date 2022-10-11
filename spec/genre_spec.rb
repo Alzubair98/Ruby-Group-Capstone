@@ -16,4 +16,3 @@ describe 'Genre' do
     expect(@genre.items.size).to be 1
   end
 end
-
