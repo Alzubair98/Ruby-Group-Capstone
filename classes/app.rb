@@ -8,6 +8,8 @@ class App
   def initialize
     @albums = []
     @genres = []
+    @games = []
+    @authors = []
 
     load_data
   end
@@ -63,6 +65,9 @@ class App
   def preserve_files
     save_data_as_json(@albums, 'albums')
     save_data_as_json(@genres, 'genres')
+  end
+
+  def add_game
   end
 
   private
