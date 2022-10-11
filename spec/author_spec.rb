@@ -19,6 +19,11 @@ describe Author do
         expect(@author.last_name).to eq 'Wayungi'
       end
   
+      it 'items length should equal 1' do
+        @game = Game.new('Call Of Duty', '12/12/2009', true, '12/10/2022')
+        @author.add_item(@game)
+        expect(@author.items.size).to eq 1
+      end
     end
   end
   
