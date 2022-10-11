@@ -41,7 +41,7 @@ class Main
     when '5'
       @app.list_all_labels
     when '6'
-      'list_all_authors'
+      @app.list_all_authors
     when '7'
       add_new_book_details
     when '8'

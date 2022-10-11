@@ -135,7 +135,18 @@ class App
       puts "#{game.name} \t| #{game.publish_date} \t| #{game.multiplayer} \t| #{game.last_played_at}"
       puts "\n-----------------------"
     end
+  end
 
+  def list_all_authors
+    puts "\nNote: No authors available." if @authors.empty?
+    puts "\n"
+    puts "\nALL AUTHORS\n\n"
+    puts "\First Name \t| Last Name "
+    puts '---------------------------'
+    @authors.each do |author|
+      puts "#{author.first_name} \t| #{author.last_name}"
+      puts "\n-----------------------"
+    end
 
   end
 
