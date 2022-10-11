@@ -1,17 +1,7 @@
 [
   {
-    "publisher": "alzubair",
+    "publisher": "lucas",
     "cover_state": "good",
-    "label": "new"
-  },
-  {
-    "publisher": "alzubair",
-    "cover_state": "bad",
-    "label": "old"
-  },
-  {
-    "publisher": "alzubair",
-    "cover_state": "bad",
-    "label": "gift"
+    "label": "parentsTV"
   }
 ]
