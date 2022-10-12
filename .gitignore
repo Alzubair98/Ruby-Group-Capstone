@@ -1,2 +1,5 @@
 # ignore local IDE settings
 .vscode/
+
+# ignore test file
+try.rb
