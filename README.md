@@ -1,6 +1,6 @@
 # Ruby-capstone-project
 
-> Ruby group capstone project
+> Ruby group capstone project : its a project for my catalog
 
 ## Built With :hammer_and_wrench:
 
@@ -41,3 +41,7 @@ Give a ⭐️ if you like this project!
 ## 📝 License
 
 This project is [MIT](./MIT.md) licensed.
+
+## video
+
+[LINK](https://www.loom.com/share/78d8b0e33b834f7f8504ca4883e47ce0)
