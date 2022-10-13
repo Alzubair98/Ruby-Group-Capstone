@@ -44,4 +44,4 @@ This project is [MIT](./MIT.md) licensed.
 
 ## video
 
-[LINK](https://www.loom.com/share/78d8b0e33b834f7f8504ca4883e47ce0)
+[LINK](https://drive.google.com/drive/u/1/folders/1EWHotmbfvoPbZcAKUuqrzTyh_Ylp2fPg)
